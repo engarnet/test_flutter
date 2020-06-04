@@ -7,7 +7,7 @@ import 'package:portfolio_flutter/repository/source/DataSource.dart';
 
 class RemoteDataSource extends DataSource {
   Future<List<Article>> getArticles() async {
-    final baseUrl = 'https://qiita.com/api/v2/items';
+    final baseUrl = 'https://qiita.com/api/v2/items?query=tag%3AFlutter';
     final response = await http.get(baseUrl);
 
     if (response.statusCode == 200) {
