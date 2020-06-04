@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_flutter/repository/ArticleRepository.dart';
 import 'package:portfolio_flutter/repository/source/impl/MockDataSource.dart';
+import 'package:portfolio_flutter/repository/source/impl/RemoteDataSource.dart';
 import 'package:portfolio_flutter/ui/home/HomeBloc.dart';
 import 'package:portfolio_flutter/ui/home/HomePage.dart';
 import 'package:provider/provider.dart';
@@ -11,7 +12,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   final ArticleRepository _articleRepository =
-      ArticleRepository(dataSource: MockDataSource());
+      ArticleRepository(dataSource: RemoteDataSource());
 
   @override
   Widget build(BuildContext context) {
