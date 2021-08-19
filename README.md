@@ -1,4 +1,4 @@
-# Flutterのポートフォリオ
+# Flutterの実験コード
 
 ## 機能
 `QiitaにあるFlutterの記事を取得して一覧表示する` のみ
